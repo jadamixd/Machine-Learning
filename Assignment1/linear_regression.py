@@ -11,6 +11,7 @@ class LinearRegression():
         self.X_min = None
         self.X_max = None
         
+        
     def fit(self, X, y):
         """
         Estimates parameters for the classifier
@@ -64,13 +65,18 @@ class LinearRegression():
         X = (X - self.X_min) / (self.X_max - self.X_min)
         return X
     
-    def printExpressions(self):
-        print('Weight: ',self.weights[0], 'Bias: ',self.bias)
-        
-        
-        
-        
-        print('Et godt uttrykk for Energy Consumption er: ',round(self.weights[0],4),'* x +',round(self.bias,4))
+    def printExpressions(self, y1, y2):
+        x1, x2 = self.X_min, self.X_max  
+
+        m = (y2 - y1) / (x2 - x1)
+        b = y1 - m * x1
+
+        print('A good estimate for the equation would be: y =', round(m, 4), '* x +', round(b, 4))
+
+
+
+
+
 
 
     
