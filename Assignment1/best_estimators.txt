@@ -1,0 +1,11 @@
+0 gir 0.64 acc og 0.585 roc auc
+1 gir 0.75 acc og 0.596 roc auc
+2 gir 0.70 acc og 0.59 roc auc
+3 ga 0.59 acc og 0.708 roc auc
+4 gir 0.76 acc og 0.588 roc auc
+5 gir 0.69 acc og 0.603 roc auc
+6 gir 0.67 acc og 0.578 roc auc
+7 gir 0.63 acc og 0.589 roc auc
+8 gir 0.75 acc og 0.591 roc auc
+9 gir 0.63 acc og 0.588 roc auc
+10 gir 0.76 acc og 0.590 roc auc
