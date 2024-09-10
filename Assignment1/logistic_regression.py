@@ -48,3 +48,11 @@ class LogisticRegression:
         y_pred = 1 / (1 + np.exp(-lin_model))
         y_pred_bin = np.where(y_pred > self.threshold, 1, 0)
         return y_pred_bin
+    
+    def roc_predict(self, X):
+        X_poly = self.poly.transform(X)
+        X_poly_scaled = self.scaler.transform(X_poly)
+
+        lin_model = np.dot(X_poly_scaled, self.weights) + self.bias
+        y_pred = 1 / (1 + np.exp(-lin_model))
+        return y_pred
